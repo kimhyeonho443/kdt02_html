@@ -1,0 +1,93 @@
+/* 전체선택자 */
+* {
+    padding : 0px;
+    margin: 0px;
+}
+/* 조상 자손 선택자 */
+header>nav>ul {
+    background-color: darkgreen;
+    color: aquamarine;
+}
+/* 속성선택자 */
+h2[class]{
+    color: yellow;
+}
+
+/* nav 아래 ul에만 색깔 적용 */
+/* 클래스 실행은 맨 앞에 '.'을 붙여줘야함, 02.css 외부 스타일 이용 파일을 이용해 스타일 이용*/
+.g1 {
+    /* 배경색과 글자색                                */
+    background-color: blue;
+    color: white;
+    /* 가로와 세로 */
+    width: 50%;
+    height: 80px;
+    /* 안쪽여백 */
+    padding: 10px;
+    /* 바깥쪽 여백 */
+    margin: 10px;
+
+/* 패딩과 테두리를 포함한 */
+    box-sizing: border-box;
+/* <!--display를  flex박스로 바꿀때는 밑에 두개의 축이 생김--> */
+    display : flex ;  
+    justify-content: center;
+    align-items: center;
+}
+
+.g2 {
+    background-color: red;
+    color: black;
+}
+/* 아이디 선택자 */
+#html {
+    background-color: blueviolet;
+    color: white;
+}
+/* 부모선택자 */
+/* <!--footer 밑 ul에만 컬러가 적용 */
+footer>ul {
+    background-color: black;
+    color: white;
+}
+/* 그룹 */
+#s1, #s2 {
+    background-color: gainsboro;
+}
+
+/* 인라인스타일변경 */
+strong{
+    display :inline-block;
+    background-color: brown;
+    color:white;
+
+    width : 50%;
+    height : 40px;
+}
+
+/* 구글폰트 구글 폰트 접속 -> 글꼴 선택 ->get font -> getembed code -> copy code 복붙 -> 밑 코드 또한 복사 font-weight는 무조건 bold 작성*/ 
+article > p {
+     font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size : 15px;
+}
+/* flex 박스 설정 : 안에 있는 블록요소들을 옆으로 이동시킴 */
+.fbox {
+    display : flex;
+    flex-direction: row;
+}
+
+.fbox > div {
+    margin-right : 20px;
+}
+/* 이미지 둥글게 */
+img {
+    border-radius: 50%;
+}
+
+ul  {
+    list-style: none;
+    display:flex;
+}
