@@ -12,6 +12,10 @@ header {
     justify-content: center;
 }
 
+main {
+  height: 70svh;
+}
+
 main a {
   text-decoration: none;
 }
@@ -54,4 +58,4 @@ footer a:hover , #inf:hover {
 
 #inf {
   background-color: green;
-}
+}   
